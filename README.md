@@ -35,3 +35,13 @@ If you want to test the contract via your test in folder src/test run:
 ```
 forge test
 ```
+# The Contract:
+```
+You can set your own URI and create NFTS.
+```
+```
+You can set whether address can mint or not. You can mint for yourself also you can mint for someone else. If you are whitelisted you have privilege to mint whatever you want if the cost is being covered. 
+```
+```
+You can limit NFTS minting. Set max supply or set whitelisted accounts of your choice. You can also withdraw every single money the contract gathered from minted tokens.
+```
