@@ -125,7 +125,6 @@ contract Sale is ERC721Enumerable, Ownable {
       revealed = true;
   }
   function setMaxSupply(uint256 _maxSupply) public onlyOwner{
-    require(_maxSupply > 1000);
       maxSupply = _maxSupply;
   }
   function setCost(uint256 _newCost) public onlyOwner {

@@ -39,9 +39,8 @@ contract Sale is ERC721Enumerable, Ownable {
   }
 
   function mint(address _to, uint256 _mintAmount) public payable {
-    require(msg.value > 5000000000000000);
-    require(!paused);
     uint256 supply = totalSupply();
+    require(!paused);
     require(_mintAmount > 0);
     require(_mintAmount <= maxMintAmount);
     require(supply + _mintAmount <= maxSupply);
@@ -57,7 +56,6 @@ contract Sale is ERC721Enumerable, Ownable {
     }
   }
   function mintByCaller(uint256 _mintAmount) public payable {
-    require(msg.value > 5000000000000000);
     require(!paused);
     uint256 supply = totalSupply();
     require(_mintAmount > 0);
@@ -125,7 +123,6 @@ contract Sale is ERC721Enumerable, Ownable {
       revealed = true;
   }
   function setMaxSupply(uint256 _maxSupply) public onlyOwner{
-    require(_maxSupply > 1000);
       maxSupply = _maxSupply;
   }
   function setCost(uint256 _newCost) public onlyOwner {

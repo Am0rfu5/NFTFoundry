@@ -19,7 +19,4 @@ contract ContractTest is DSTest {
     function failToSetMaxSupply() public {
         sale.setMaxSupply(500);
     }
-    function setRequiredMaxSupply() public {
-        sale.setMaxSupply(1500);
-    }
 }

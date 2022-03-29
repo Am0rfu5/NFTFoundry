@@ -11,15 +11,6 @@ contract ContractTest is DSTest {
     }
 
     function failToMintNoValuePaid() public {
-        sale.mint(address(1), 1);
-    }
-    function mintWithRequiredValue() public {
-        sale.mint{value: 0.005 ether}(address(1), 1);
-    }
-    function failToSetMaxSupply() public {
-        sale.setMaxSupply(500);
-    }
-    function setRequiredMaxSupply() public {
-        sale.setMaxSupply(1500);
+        sale.mint(address(1));
     }
 }
