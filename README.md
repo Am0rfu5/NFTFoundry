@@ -1,6 +1,6 @@
 # Resources
 
--   [Foundry Book](https://onbjerg.github.io/foundry-book/)
+-   [Foundry Book](https://book.getfoundry.sh/)
 -   [Foundry Starter Kit](https://github.com/smartcontractkit/foundry-starter-kit)
 -   [Patrick Collins](https://github.com/PatrickAlphaC/foundry-play)
 
@@ -45,3 +45,5 @@ You can set whether address can mint or not. You can mint for yourself also you 
 ```
 You can limit NFTS minting. Set max supply or set whitelisted accounts of your choice. You can also withdraw every single money the contract gathered from minted tokens.
 ```
+
+[<img src="https://user-images.githubusercontent.com/30512638/180466164-620eb838-c4f8-4e73-b39e-8ba7118689f6.png">](https://book.getfoundry.sh/)
